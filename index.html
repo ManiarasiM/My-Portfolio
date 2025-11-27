@@ -4,23 +4,32 @@
     <title>Maniarasi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/pf.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dummy.css">
 </head>
 <body>
 <a href="index.html" class="primary-circle-btn">
     <img src="img/upper.png" alt="Home" />
 </a>
-    <header class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">My Projects</a></li>
-        </ul>
-    </header>
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">Maniarasi</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">My Projects</a></li>
+    </ul>
+  </div>
+</header>
+
 
     <section class="hero" id="home">
-        <img class="profile-img" src="img/me_compressed.jpg" alt="My Photo" width="400px">
+        <img class="profile-img" src="img/me.png" alt="My Photo" width="400px">
 
         <div class="intro">
             <h2 class="type">Hello</h2>
@@ -190,19 +199,21 @@
     </div>
 
 <footer class="footer">
+    <h4>Thank you for visiting</h4>
     <p>© 2025 Maniarasi. All Rights Reserved.</p>
 </footer>
-    
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
 </body>
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
